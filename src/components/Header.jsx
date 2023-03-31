@@ -58,10 +58,16 @@ export default function Header() {
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <div className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
                 <Link to={"/"}>Inicio</Link>
-                </div>
+            </div>
 
-                <div  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
-                <Link to={"/"}>Jugadores</Link>
+            <div  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                <Link to={"/jugadores"}>Jugadores</Link>
+            </div>
+            <div  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                <Link to={"/nosotros"}>Nosotros</Link>
+            </div>
+            <div  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                <Link to={"/contacto"}>Contacto</Link>
             </div>
           </div>
         </div>

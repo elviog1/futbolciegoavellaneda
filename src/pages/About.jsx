@@ -13,7 +13,7 @@ export default function About() {
         })
     },[])
   return (
-    <div  className='bg-gray-800 gap-5 min-h-screen m-auto flex flex-col text-white items-center'>
+    <div  className='bg-gray-800 gap-5 min-h-screen m-auto flex flex-col text-white items-center overflow-hidden'>
         {/* Quienes somos  */}
         <div  className=' flex items-center mt-10 ' data-aos="fade-right">
             <div className=''>
