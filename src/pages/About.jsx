@@ -41,7 +41,7 @@ export default function About() {
                     </div>
                     <div data-aos="flip-left">
                         <img src={yesi} 
-                            className="w-72 shadow-lg duration-300 hover:shadow-white rounded-full mt-14"
+                            className="sm:w-72 shadow-lg duration-300 hover:shadow-white rounded-full mt-14"
                         />
                         </div>
                 </div>

@@ -28,7 +28,7 @@ export default function Carousel() {
   
       const itemCarousel = (item) =>( 
                   <div className='h-96 ' key={item}>
-                      <img  src={item} className='rounded-2xl h-full '/>
+                      <img  src={item} className='rounded-2xl h-full object-cover'/>
                   </div>
       )
   
