@@ -21,7 +21,7 @@ export default function Footer() {
 
       </div>
       <div className=''>
-        <img src={logoAvellaneda} />
+        <img src={logoAvellaneda} className='h-24' />
       </div>
       <div className='flex gap-2 justify-center '>
         <span className='text-gray-300 text-2xl'>Seguinos en </span>
