@@ -1,7 +1,6 @@
 import React from 'react'
 import logoAvellaneda from '../images/Photo/av-logo.png'
 import logo from '../images/Photo/logo-laspirañas2.png'
-import { BsArrowUpCircleFill } from "react-icons/bs";
 export default function Footer() {
   const scrollToTop = ()=>{
     window.scrollTo({
@@ -13,11 +12,9 @@ export default function Footer() {
     <div className='m-auto flex justify-center w-full bg-gray-800'>
     <div className='  items-center text-center flex justify-around flex-wrap gap-2 py-4 w-full'>
       <div className=' flex justify-center'>
-        {/* <span className='text-gray-300 text-2xl font-bold'>Las Pirañas De Avellaneda</span> */}
         <div className='flex '>
           <img src={logo} className="h-14" />
         </div>
-        {/* <img src={logo} className="h-14" /> */}
 
       </div>
       <div className=''>
@@ -39,7 +36,7 @@ export default function Footer() {
       </div>
       <div className=''>
         <button onClick={scrollToTop}>
-          <BsArrowUpCircleFill className='text-4xl text-gray-300' />
+          <img src='https://cdn-icons-png.flaticon.com/512/4582/4582843.png' className='w-14 transform -scale-x-100 hover:rotate-45 duration-300 hover:-scale-x-125 hover:scale-125' />
         </button>
       </div>
     </div>
