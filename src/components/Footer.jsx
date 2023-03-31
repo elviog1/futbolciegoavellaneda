@@ -12,7 +12,7 @@ export default function Footer() {
   return (
     <div className='m-auto flex justify-center w-full bg-gray-800'>
     <div className='  items-center text-center flex justify-around flex-wrap gap-2 py-4 w-full'>
-      <div className='w-64 flex justify-center'>
+      <div className=' flex justify-center'>
         {/* <span className='text-gray-300 text-2xl font-bold'>Las Pirañas De Avellaneda</span> */}
         <div className='flex '>
           <img src={logo} className="h-14" />
@@ -20,10 +20,10 @@ export default function Footer() {
         {/* <img src={logo} className="h-14" /> */}
 
       </div>
-      <div className='w-64'>
+      <div className=''>
         <img src={logoAvellaneda} />
       </div>
-      <div className='flex gap-2 justify-center w-64'>
+      <div className='flex gap-2 justify-center '>
         <span className='text-gray-300 text-2xl'>Seguinos en </span>
         <div className='flex gap-3 '>
           <a rel="noreferrer" target="_blank" href='https://www.instagram.com/futbolciego_avellaneda/'>
@@ -37,7 +37,7 @@ export default function Footer() {
           </a>
         </div>
       </div>
-      <div className='w-64'>
+      <div className=''>
         <button onClick={scrollToTop}>
           <BsArrowUpCircleFill className='text-4xl text-gray-300' />
         </button>
