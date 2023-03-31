@@ -33,13 +33,13 @@ export default function Detail() {
     <div className='flex justify-center bg-gray-800 min-h-screen'>
         {
             player.name  ? 
-            <div className=''>
-            <Link to="/jugadores" className=' h-10 text-5xl absolute text-green-800 hover:text-green-600'>
+            <div className='px-4'>
+            <Link to="/jugadores" className=' h-10 text-5xl relative text-green-800 hover:text-green-600'>
                 <BsFillReplyAllFill  /> 
             </Link>
             <div className='flex flex-col items-center '>
                 <img src={player.photo} 
-                className="h-96 w-96 object-cover rounded-full" 
+                className="h-72 w-72 w- object-cover rounded-full" 
                 alt='Foto del jugador'
                 />
 

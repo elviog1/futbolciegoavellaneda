@@ -13,7 +13,7 @@ export default function About() {
         })
     },[])
   return (
-    <div  className='bg-gray-800 gap-5 min-h-screen m-auto flex flex-col text-white items-center overflow-hidden'>
+    <div  className='bg-gray-800 gap-5 min-h-screen m-auto flex flex-col text-white items-center overflow-hidden px-3'>
         {/* Quienes somos  */}
         <div  className=' flex items-center mt-10 ' data-aos="fade-right">
             <div className=''>
@@ -41,7 +41,7 @@ export default function About() {
                     </div>
                     <div data-aos="flip-left">
                         <img src={yesi} 
-                            className="w-72  skew-y-12 shadow-lg duration-300 hover:shadow-white rounded-3xl mt-14"
+                            className="w-72 shadow-lg duration-300 hover:shadow-white rounded-full mt-14"
                         />
                         </div>
                 </div>
