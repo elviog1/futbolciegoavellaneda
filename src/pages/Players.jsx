@@ -22,7 +22,7 @@ export default function Players() {
   return (
     <div className='m-auto text-center flex justify-center bg-gray-800 min-h-screen'>
         <div>
-            <h2 className='text-4xl text-white font-bold'>Jugadores - {playerFilter.length}</h2>
+            <h2 className='text-4xl text-white font-bold'>Jugadores - {playerFilter.length > 0 ? playerFilter.length : ""}</h2>
             <div className='flex justify-center gap-5 py-4 flex-wrap'>
                 <button onClick={()=>setPlayerFilter(arrayPlayer)} className='bg-gradient-to-r from-green-500 to-green-800  py-2 px-4 rounded-lg text-xl hover:text-white hover:bg-green-600 font-bold'>Todos</button>
                 <button onClick={()=>setPlayerFilter(woman)} className='bg-gradient-to-r from-green-500 to-green-800 py-2 px-4 rounded-lg text-xl hover:text-white hover:bg-green-600 font-bold'>Femenino</button>
