@@ -37,7 +37,6 @@ export default function Detail() {
         }
         return yearsOld
     }
-    console.log(player)
 
     const handleDelete = ()=>{
         axios.delete(api+ `/players/${id}`)

@@ -36,7 +36,6 @@ export default function NewPlayer() {
 
     }
 
-    console.log(captain)
   return (
     <div className='bg-gray-800 flex justify-center min-h-screen items-center pt-4'>
         <div className=''>
@@ -93,7 +92,7 @@ export default function NewPlayer() {
       <div className="mb-4">
         <label htmlFor="height" className="block text-gray-100 text-xl font-medium mb-2">Altura</label>
         <input
-          type="number"
+          type="text"
           id="height"
           name="height"
           value={height}
@@ -193,17 +192,6 @@ export default function NewPlayer() {
       <div className="mb-4 flex gap-4 items-center flex-wrap">
         <label htmlFor="captain" className="block text-gray-100 text-xl font-medium ">Capitan</label>
 
-        {/* <label htmlFor="no" className='flex gap-2 text-gray-400 cursor-pointer'>No
-        <input
-          type="radio"
-          id="no"
-          name="captain"
-        //   value="no"
-          onChange={(event) => setCaptain(event.target.checked)}
-          className=" focus:ring-blue-500 focus:border-blue-500 sm:text-sm p-2"
-          required />
-        </label> */}
-
         <label htmlFor='si' className='flex gap-2 text-gray-400 cursor-pointer'>
         <input
           type="checkbox"
@@ -216,9 +204,6 @@ export default function NewPlayer() {
         </label>
 
       </div>
-
-
-      
 
       <div className="mt-6 flex justify-center">
         <button
