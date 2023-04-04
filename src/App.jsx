@@ -8,6 +8,8 @@ import Detail from './pages/Detail'
 import Games from './pages/Games'
 import Home from './pages/Home'
 import Players from './pages/Players'
+import NewPlayer from './pages/NewPlayer'
+import SignIn from './pages/SignIn'
 
 function App() {
 
@@ -21,6 +23,8 @@ function App() {
           <Route path='/nosotros' element={ <About />} />
           <Route path='/contacto' element={ <Contact />} />
           <Route path='/partidos' element={ <Games />} />
+          <Route path='/registro' element={ <NewPlayer />} />
+          <Route path='/signin' element={ <SignIn />} />
         </Routes>
       </Layout>
     </BrowserRouter>

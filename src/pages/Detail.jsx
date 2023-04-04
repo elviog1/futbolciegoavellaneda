@@ -1,7 +1,7 @@
 import axios from 'axios'
 import React, { useEffect,useState } from 'react'
 import { BsFillReplyAllFill } from "react-icons/bs";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Loading from '../components/Loading';
 
 
@@ -10,6 +10,9 @@ export default function Detail() {
     const query = new URLSearchParams(window.location.search)
     const id = query.get("id")
     const [player,setPlayer] = useState({})
+    const navigate = useNavigate()
+    const user = JSON.parse(localStorage.getItem("user"))
+
     useEffect(()=>{
         axios.get(api+`/players/${id}`)
         .then(res =>{
@@ -35,6 +38,14 @@ export default function Detail() {
         return yearsOld
     }
     console.log(player)
+
+    const handleDelete = ()=>{
+        axios.delete(api+ `/players/${id}`)
+        .then(res =>{
+            navigate("/jugadores")
+        })
+        .catch(e => console.log(e))
+    }
   return (
     <div className='flex justify-center bg-gray-800 min-h-screen'>
         {
@@ -64,6 +75,12 @@ export default function Detail() {
                     <p><span className='font-bold text-gray-300'>Altura:</span> {player.height}m</p>
                     <p><span className='font-bold text-gray-300'>Posicion:</span> {player.position}</p>
                 </div>
+                {user &&
+                
+                <div className='flex justify-end w-full'>
+                    <button className='p-3 font-bold text-white rounded-lg bg-red-800 hover:bg-red-600' onClick={handleDelete}>Eliminar</button>
+                </div>   
+                }
             </div>
         </div>
             :

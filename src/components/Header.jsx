@@ -1,11 +1,18 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { HiMenu, HiX } from 'react-icons/hi';
 import logo from '../images/Photo/logo-laspirañas2.png'
 
 export default function Header() {
     const [isOpen, setIsOpen] = useState(false);
-
+    let user = JSON.parse(localStorage.getItem("user"))
+    const [login,setLogin] = useState(false)
+    
+    useEffect(()=>{
+      if(user){
+        setLogin(!login)
+      }
+    },[setLogin])
   return (
     <nav className="bg-gray-800">
       <div className="w-8/12 mx-auto px-4 sm:px-6 lg:px-8">
@@ -15,7 +22,7 @@ export default function Header() {
               <img src={logo} className="h-14" />
               
             </div>
-            <div className="hidden md:block">
+            <div className="hidden lg:block">
               <div className="ml-10 flex items-baseline space-x-4">
               
                 <div className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
@@ -34,10 +41,15 @@ export default function Header() {
                 <div  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
                 <Link to={"/partidos"} className="font-bold text-xl">Partidos</Link>
                 </div>
+                {login && 
+                <div  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                  <Link to={"/registro"} className="font-bold text-xl">Registro</Link>
+                </div>
+                }
               </div>
             </div>
           </div>
-          <div className="-mr-2 flex md:hidden">
+          <div className="-mr-2 flex lg:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
               type="button"
@@ -56,7 +68,7 @@ export default function Header() {
             </button>
           </div>
         </div>
-        <div className={`${isOpen ? "block " : "hidden"} md:hidden absolute bg-gray-800 left-0 w-full text-center z-20 `} id="mobile-menu">
+        <div className={`${isOpen ? "block " : "hidden"} lg:hidden absolute  bg-gray-800 left-0 w-full text-center z-20 `} id="mobile-menu">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 ">
             <div className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl font-medium">
                 <Link to={"/"}>Inicio</Link>
@@ -73,6 +85,9 @@ export default function Header() {
             </div>
             <div  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl font-medium">
                 <Link to={"/partidos"}>Partidos</Link>
+            </div>
+            <div  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl font-medium">
+                <Link to={"/registro"}>Registro</Link>
             </div>
           </div>
         </div>
