@@ -57,7 +57,7 @@ export default function Carousel() {
         
 
   return (
-            <div className='flex h-96 justify-between my-5'>
+            <div className='flex h-96 justify-between my-5 max-w-screen-xl'>
                 <BsFillCaretLeftFill className="text-4xl flex self-center cursor-pointer"  onClick={prev}>prev</BsFillCaretLeftFill>
                 {imagesCarousel.slice(start,end).map(itemCarousel)} 
                 <BsFillCaretRightFill className="text-4xl flex self-center cursor-pointer"  onClick={next}>next</BsFillCaretRightFill>

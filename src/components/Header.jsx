@@ -8,11 +8,10 @@ export default function Header() {
 
   return (
     <nav className="bg-gray-800">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-8/12 mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <div className="flex items-center">
+          <div className="flex items-center flex-wrap">
             <div className="flex-shrink-0">
-              {/* <span className="text-white font-bold text-2xl">LAS PIRAÑAS</span> */}
               <img src={logo} className="h-14" />
               
             </div>
@@ -31,6 +30,9 @@ export default function Header() {
                 </div>
                 <div  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
                 <Link to={"/contacto"} className="font-bold text-xl">Contacto</Link>
+                </div>
+                <div  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                <Link to={"/partidos"} className="font-bold text-xl">Partidos</Link>
                 </div>
               </div>
             </div>
@@ -68,6 +70,9 @@ export default function Header() {
             </div>
             <div  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl font-medium">
                 <Link to={"/contacto"}>Contacto</Link>
+            </div>
+            <div  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl font-medium">
+                <Link to={"/partidos"}>Partidos</Link>
             </div>
           </div>
         </div>
