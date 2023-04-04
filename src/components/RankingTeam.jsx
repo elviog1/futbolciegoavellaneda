@@ -49,21 +49,18 @@ export default function RankingTeam({games}) {
         return {points: points, goals:goals, team:nameTeam}
     }
 
-
-
     const ranking = nameTeams().map(item => clasification(item)).sort((a,b)=> b.points- a.points)
 
-    // console.log(dataTeam("Huracan")) 
-    // console.log(clasification("Huracan")) 
 
   return (
-    <table className='bg-gray-400 w-full text-center rounded-xl my-3'>
+    <div className='px-2'>
+        <table className='bg-gray-400 w-full text-center rounded-xl my-3 text-xl'>
                     <thead >
                         <tr>
-                            <th className='hidden sm:table-cell'>Posicion</th>
-                            <th className='hidden sm:table-cell'>Equipo</th>
-                            <th className='hidden sm:table-cell'>Puntos</th>
-                            <th className='hidden sm:table-cell'>Goles</th>
+                            <th className=' sm:table-cell'>Posicion</th>
+                            <th className=' sm:table-cell'>Equipo</th>
+                            <th className=' sm:table-cell'>Puntos</th>
+                            <th className=' sm:table-cell'>Goles</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -78,5 +75,6 @@ export default function RankingTeam({games}) {
                         ))}
                     </tbody>
                 </table>
+    </div>
   )
 }

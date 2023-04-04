@@ -18,14 +18,14 @@ export default function TableGames({games}) {
 
   const PrintTable = (props,index)=> {
     return (
-    <div className='py-4 px-2' key={props.date}>
+    <div className='py-4 px-2 text-xl' key={props.date}>
     <h2 className='text-white'>Jornada {index +1} - {props.date}</h2>
     <table className='w-full bg-gray-400 rounded-xl'>
                     <thead>
                         <tr className='text-center bg-gray-500'>
-                            <th className='hidden sm:table-cell'>Equipo1</th>
-                            <th className='hidden sm:table-cell'>Resultado</th>
-                            <th className='hidden sm:table-cell'>Equipo2</th>
+                            <th className=' sm:table-cell'>Equipo1</th>
+                            <th className=' sm:table-cell'>Resultado</th>
+                            <th className=' sm:table-cell'>Equipo2</th>
                         </tr>
                     </thead>
                     <tbody>
