@@ -54,6 +54,7 @@ export default function RankingTeam({games}) {
 
   return (
     <div className='px-2'>
+        <p className='text-center text-white'>Posiciones</p>
         <table className='bg-gray-400 w-full text-center rounded-xl my-3 text-xl'>
                     <thead >
                         <tr>

@@ -17,10 +17,11 @@ export default function Contact() {
     setSendForm(!sendForm)
   }
   return (
-    <div className='bg-gray-800 gap-5 min-h-screen  m-auto flex flex-col justify-center items-center'>
+    <div className='bg-gray-800 gap-5 min-h-screen  m-auto flex flex-col justify-center items-center '>
 
-      <form onSubmit={handleSubmit} className={`w-96 mx-auto px-2 ${sendForm ? "animate__animated animate__bounceOut" : ""}`}>
-      {/* <h2 className='text-5xl text-white font-bold py-4 text-center'></h2> */}
+      <div className='max-w-2xl'>
+      <h3 className='text-4xl sm:max-w-3xl text-white font-medium py-4 text-center'>¿Tenes alguna duda o consulta sobre nosotros? Dejanos tu mensaje.</h3>
+      <form onSubmit={handleSubmit} className={` mx-auto px-2 w-full ${sendForm ? "animate__animated animate__bounceOut" : ""}`}>
       <div className="mb-4">
         <label htmlFor="name" className="block text-gray-100 text-xl font-medium mb-2">Nombre</label>
         <input
@@ -52,7 +53,7 @@ export default function Contact() {
           name="message"
           value={message}
           onChange={(event) => setMessage(event.target.value)}
-          className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm p-2"
+          className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm p-2 resize-none"
           rows={5}
           required
           maxLength={300}
@@ -67,6 +68,7 @@ export default function Contact() {
         </button>
       </div>
     </form>
+      </div>
     <span className={`absolute text-5xl opacity-0 font-bold text-white ${sendForm ? " animate__animated animate__zoomIn animate__delay-1s opacity-100" : ""}`}>Mensaje enviado</span>
 
     </div>
