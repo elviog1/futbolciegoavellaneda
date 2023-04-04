@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { HiMenu, HiX } from 'react-icons/hi';
 import logo from '../images/Photo/logo-laspirañas2.png'
 
@@ -7,7 +7,7 @@ export default function Header() {
     const [isOpen, setIsOpen] = useState(false);
     let user = JSON.parse(localStorage.getItem("user"))
     const [login,setLogin] = useState(false)
-    
+    const navigate = useNavigate()
     useEffect(()=>{
       if(user){
         setLogin(!login)
@@ -19,8 +19,9 @@ export default function Header() {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center flex-wrap">
             <div className="flex-shrink-0">
-              <img src={logo} className="h-14" />
-              
+              <Link to="/signin">
+                <img src={logo} className="h-14" />
+              </Link>
             </div>
             <div className="hidden lg:block">
               <div className="ml-10 flex items-baseline space-x-4">
