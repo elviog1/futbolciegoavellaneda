@@ -70,8 +70,8 @@ export default function RankingTeam({games}) {
                         {ranking.map((item,index)=>(
                             <tr key={index}>
                                 <td >{index+1}</td>
-                                <td className='sm:hidden'>{item.team.split(" ").map(word => word.length >= 1 ? word[0] : word.slice(0, 2))}</td>
-                                <td className='hidden sm:table-cell'>{item.team}</td>
+                                {/* <td className='sm:hidden'>{item.team.split(" ").map(word => word.length >= 1 ? word[0] : word.slice(0, 2))}</td> */}
+                                <td className=' sm:table-cell'>{item.team}</td>
                                 <td >{item.points} Pts.</td>
                                 <td >{item.goals}</td>
                             </tr>

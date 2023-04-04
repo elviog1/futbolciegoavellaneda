@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 export default function Home() {
   return (
     <div className='bg-gray-800 min-h-screen m-auto p-4 flex flex-col items-center' >
-      <div className='h-96 w-8/12'>
+      <div className='h-96 sm:w-8/12'>
           <img 
             src={FutbolCiegoPhoto}
             className="bg-white w-full h-96 object-cover rounded-3xl"

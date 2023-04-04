@@ -18,6 +18,12 @@ export default function Detail() {
         .catch(e =>console.log(e))
     },[])
 
+    useEffect(()=>{
+        window.scrollTo({
+            top:0
+        })
+    },[])
+
     function getYearsOld(date){
         let dateBirth = new Date(date)
         let dateNow = new Date()

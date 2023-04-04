@@ -31,11 +31,11 @@ export default function TableGames({games}) {
                     <tbody>
                       {props.data.map((item,index) =>(
                         <tr className='text-center hover:bg-gray-500' key={index}>
-                            <td className='sm:hidden'>{item.team1.split(" ").map(word => word.length >= 1 ? word[0] : word.slice(0, 2))}</td>
-                            <td className='hidden sm:table-cell'>{item.team1}</td>
+                            {/* <td className='sm:hidden'>{item.team1.split(" ").map(word => word.length >= 1 ? word[0] : word.slice(0, 2))}</td> */}
+                            <td className=' sm:table-cell'>{item.team1}</td>
                             <td className=''>{item.goalTeam1} - {item.goalTeam2}</td>
-                            <td className='sm:hidden'>{item.team2.split(" ").map(word => word.length >= 1 ? word[0] : word.slice(0, 2))}</td>
-                            <td className='hidden sm:table-cell'>{item.team2}</td>
+                            {/* <td className='sm:hidden'>{item.team2.split(" ").map(word => word.length >= 1 ? word[0] : word.slice(0, 2))}</td> */}
+                            <td className=' sm:table-cell'>{item.team2}</td>
                         </tr>
                       ))}
                         
