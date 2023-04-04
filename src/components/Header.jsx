@@ -56,8 +56,8 @@ export default function Header() {
             </button>
           </div>
         </div>
-        <div className={`${isOpen ? "block" : "hidden"} md:hidden`} id="mobile-menu">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <div className={`${isOpen ? "block " : "hidden"} md:hidden absolute bg-gray-800 left-0 w-full text-center z-20 `} id="mobile-menu">
+          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 ">
             <div className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl font-medium">
                 <Link to={"/"}>Inicio</Link>
             </div>
