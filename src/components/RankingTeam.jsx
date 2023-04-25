@@ -59,16 +59,16 @@ export default function RankingTeam({games}) {
         <table className='bg-gray-400 w-full text-center rounded-xl my-3 text-xl'>
                     <thead >
                         <tr>
-                            <th className=' sm:table-cell'>🎖Posicion</th>
-                            <th className=' sm:table-cell'>🥅Equipo</th>
-                            <th className=' sm:table-cell'>💯Puntos</th>
-                            <th className=' sm:table-cell'>⚽Goles</th>
+                            <th className=' sm:table-cell'>Posicion</th>
+                            <th className=' sm:table-cell'>Equipo</th>
+                            <th className=' sm:table-cell'>Puntos</th>
+                            <th className=' sm:table-cell'>Goles</th>
                         </tr>
                     </thead>
                     <tbody>
                         {ranking.map((item,index)=>(
                             <tr key={index} className="hover:bg-gray-500">
-                                <td >{index+1}</td>
+                                <td >{index+1 == 1 ? index+1 + "🥇" : index+1 ==2 ? index+1 + "🥈" : index+1+ "°" }</td>
                                 {/* <td className='sm:hidden'>{item.team.split(" ").map(word => word.length >= 1 ? word[0] : word.slice(0, 2))}</td> */}
                                 <td className=' sm:table-cell'>{item.team}</td>
                                 <td >{item.points} Pts.</td>

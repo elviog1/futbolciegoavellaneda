@@ -9,7 +9,7 @@ export default function Footer() {
     })
   }
   return (
-    <div className='flex justify-center bg-gray-800'>
+    <div className='flex justify-center bg-gray-800 py-4'>
       <div className='w-100 flex justify-center  '>
     <div className='  items-center text-center flex justify-around flex-wrap gap-2 py-4 w-full'>
       <div className=' flex justify-center'>
