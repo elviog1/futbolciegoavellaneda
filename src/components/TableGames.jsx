@@ -18,7 +18,7 @@ export default function TableGames({games}) {
 
   const PrintTable = (props,index)=> {
     return (
-    <div className='py-4 px-2 text-xl' key={props.date}>
+    <div className='py-7 px-2 text-xl' key={props.date}>
     <h2 className='text-white'>Jornada {index +1} - {props.date}</h2>
     <table className='w-full bg-gray-400 rounded-xl'>
                     <thead>

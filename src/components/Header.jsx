@@ -15,7 +15,7 @@ export default function Header() {
     },[setLogin])
   return (
     <nav className="bg-gray-800">
-      <div className="w-8/12 mx-auto px-4 sm:px-6 lg:px-8">
+      <div className=" mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center flex-wrap">
             <div className="flex-shrink-0">
@@ -87,9 +87,11 @@ export default function Header() {
             <div  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl font-medium">
                 <Link to={"/partidos"}>Partidos</Link>
             </div>
+            {login && 
             <div  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl font-medium">
                 <Link to={"/registro"}>Registro</Link>
             </div>
+            }
           </div>
         </div>
       </div>

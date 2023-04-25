@@ -2,7 +2,6 @@ import React from 'react'
 
 export default function RankingTeam({games}) {
     const dataGames = games
-
     const dataTeam = (nameTeam)=>{
         const dataResponse = dataGames.filter(item => item.team1 === nameTeam || item.team2 === nameTeam)
         return dataResponse
@@ -54,19 +53,21 @@ export default function RankingTeam({games}) {
 
   return (
     <div className='px-2'>
-        <p className='text-center text-white'>Posiciones</p>
+        {games.length>0 &&
+        <div>
+            <p className='text-center text-white'>🏆 Posiciones 🏆</p>
         <table className='bg-gray-400 w-full text-center rounded-xl my-3 text-xl'>
                     <thead >
                         <tr>
-                            <th className=' sm:table-cell'>Posicion</th>
-                            <th className=' sm:table-cell'>Equipo</th>
-                            <th className=' sm:table-cell'>Puntos</th>
-                            <th className=' sm:table-cell'>Goles</th>
+                            <th className=' sm:table-cell'>🎖Posicion</th>
+                            <th className=' sm:table-cell'>🥅Equipo</th>
+                            <th className=' sm:table-cell'>💯Puntos</th>
+                            <th className=' sm:table-cell'>⚽Goles</th>
                         </tr>
                     </thead>
                     <tbody>
                         {ranking.map((item,index)=>(
-                            <tr key={index}>
+                            <tr key={index} className="hover:bg-gray-500">
                                 <td >{index+1}</td>
                                 {/* <td className='sm:hidden'>{item.team.split(" ").map(word => word.length >= 1 ? word[0] : word.slice(0, 2))}</td> */}
                                 <td className=' sm:table-cell'>{item.team}</td>
@@ -76,6 +77,8 @@ export default function RankingTeam({games}) {
                         ))}
                     </tbody>
                 </table>
+        </div>
+        }
     </div>
   )
 }

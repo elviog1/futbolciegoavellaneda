@@ -5,18 +5,18 @@ import { Link } from 'react-router-dom'
 
 export default function Home() {
   return (
-    <div className='bg-gray-800 min-h-screen m-auto p-4 flex flex-col items-center' >
-      <div className='h-96 sm:w-8/12'>
+    <div className='bg-gray-800  m-auto p-4 flex flex-col items-center' >
+      <div className='h-96'>
           <img 
             src={FutbolCiegoPhoto}
-            className="bg-white w-full h-96 object-cover rounded-3xl"
+            className="bg-white h-96 object-cover rounded-3xl w-100 brightness-75"
             />
 
       </div>
-        <h1 className='sm:text-5xl text-4xl text-white font-bold relative bottom-44 '>Las Pirañas</h1>
-        <p className='sm:text-5xl text-2xl text-white font-bold relative  bottom-44 '>Mas Viva que nunca.</p>
+        <h1 className='sm:text-6xl text-4xl text-white font-bold relative bottom-44 '>Las Pirañas</h1>
+        <p className='sm:text-6xl text-2xl text-white font-bold relative  bottom-44 '>Ciudad Deportiva</p>
 
-      <div className='flex justify-center flex-wrap w-8/12'>
+      <div className='flex justify-center flex-wrap'>
           <img 
             src={logo} 
             className='w-96'

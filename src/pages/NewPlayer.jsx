@@ -37,7 +37,7 @@ export default function NewPlayer() {
     }
 
   return (
-    <div className='bg-gray-800 flex justify-center min-h-screen items-center pt-4'>
+    <div className='bg-gray-800 flex justify-center  items-center pt-4'>
         <div className=''>
             <h2 className='text-white font-medium text-4xl text-center'>Registro de Jugadores </h2>
 

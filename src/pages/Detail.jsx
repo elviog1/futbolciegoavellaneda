@@ -46,7 +46,7 @@ export default function Detail() {
         .catch(e => console.log(e))
     }
   return (
-    <div className='flex justify-center bg-gray-800 min-h-screen'>
+    <div className='flex justify-center bg-gray-800 '>
         {
             player.name  ? 
             <div className='px-4'>

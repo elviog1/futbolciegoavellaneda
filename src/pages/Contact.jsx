@@ -17,7 +17,7 @@ export default function Contact() {
     setSendForm(!sendForm)
   }
   return (
-    <div className='bg-gray-800 gap-5 min-h-screen  m-auto flex flex-col justify-center items-center '>
+    <div className='bg-gray-800 gap-5  m-auto flex flex-col justify-center items-center '>
 
       <div className='max-w-2xl'>
       <h3 className='text-4xl sm:max-w-3xl text-white font-medium py-4 text-center'>¿Tenes alguna duda o consulta sobre nosotros? Dejanos tu mensaje.</h3>

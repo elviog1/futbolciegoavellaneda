@@ -9,7 +9,8 @@ export default function Footer() {
     })
   }
   return (
-    <div className='m-auto flex justify-center w-full bg-gray-800'>
+    <div className='flex justify-center bg-gray-800'>
+      <div className='w-100 flex justify-center  '>
     <div className='  items-center text-center flex justify-around flex-wrap gap-2 py-4 w-full'>
       <div className=' flex justify-center'>
         <div className='flex '>
@@ -39,6 +40,7 @@ export default function Footer() {
           <img src='https://cdn-icons-png.flaticon.com/512/4582/4582843.png' className='w-14 transform -scale-x-100 hover:rotate-45 duration-300 hover:-scale-x-125 hover:scale-125' />
         </button>
       </div>
+    </div>
     </div>
     </div>
   )

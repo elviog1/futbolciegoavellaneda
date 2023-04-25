@@ -13,7 +13,7 @@ export default function About() {
         })
     },[])
   return (
-    <div  className='bg-gray-800 gap-5 min-h-screen m-auto flex flex-col text-white items-center overflow-hidden px-3'>
+    <div  className='bg-gray-800 gap-5  m-auto flex flex-col text-white items-center overflow-hidden px-3'>
         {/* Quienes somos  */}
         <div  className=' flex items-center mt-10 ' data-aos="fade-right">
             <div className=''>
@@ -31,7 +31,7 @@ export default function About() {
         {/* Quien lidera */}
         <div  className=' flex items-center' >
             <div className=''>
-                <div className='flex flex-wrap justify-center items-center min-h-screen'>
+                <div className='flex flex-wrap justify-center items-center'>
                     <div className='self-center max-w-xl'>
                         <h2 className='text-5xl  font-bold  py-5' data-aos="fade-left">¿ Quien Lidera ?</h2>
                         <div data-aos="fade-up">
@@ -50,7 +50,7 @@ export default function About() {
         {/* Donde entrenamos */}
         <div  className=' flex items-center max-w-xl' >
             <div className=''>
-                <div className='flex flex-wrap justify-center items-center min-h-screen'>
+                <div className='flex flex-wrap justify-center items-center '>
                     <div className='self-center ' >
                         <div data-aos="zoom-in-right">
                             <h2 className='text-5xl  font-bold  py-5'>¿ Donde Entrenamos ?</h2>
@@ -69,7 +69,7 @@ export default function About() {
             </div>
         </div>
         {/* Que logramos */}
-        <div className='min-h-screen flex items-center'>
+        <div className=' flex items-center'>
             <div className='max-w-screen-md'>
                 <div className='flex flex-col'>
                     <div className='self-center'>
