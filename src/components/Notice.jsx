@@ -20,11 +20,11 @@ export default function Notice({notice}) {
   },[notice])
 
   const printNotice = (notice)=> (
-    <div className='mt-4 p-2 border-2 rounded border-slate-600 hover:bg-slate-600  duration-300  flex justi flex-col sm:flex-row' key={notice.title}>
+    <div className='mt-4 p-2 border-2 rounded border-slate-600 hover:bg-slate-600  duration-300  flex justi flex-col sm:flex-row text-slate-300' key={notice.title}>
         <img className='   sm:w-72 rounded mb-4 sm:mb-0 sm:mr-4' src={notice.images} alt='imagen' />
         <div className='flex justify-between w-full'>
           <div>
-            <h2 className='text-4xl mb-2'>{notice.title}</h2>
+            <h2 className='text-4xl mb-2 font-bold'>{notice.title}</h2>
             <p className='mb-4'>{notice.notice}</p>
             <div className='flex justify-between'>
               <span>{notice.date}</span>
