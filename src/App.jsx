@@ -10,6 +10,7 @@ import Home from './pages/Home'
 import Players from './pages/Players'
 import NewPlayer from './pages/NewPlayer'
 import SignIn from './pages/SignIn'
+import NoticePage from './pages/NoticePage'
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
           <Route path='/partidos' element={ <Games />} />
           <Route path='/registro' element={ <NewPlayer />} />
           <Route path='/signin' element={ <SignIn />} />
+          <Route path='/noticias' element={ <NoticePage />} />
         </Routes>
       </Layout>
     </BrowserRouter>

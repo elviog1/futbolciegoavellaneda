@@ -42,6 +42,9 @@ export default function Header() {
                 <div  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
                 <Link to={"/partidos"} className="font-bold text-xl">Partidos</Link>
                 </div>
+                <div  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                <Link to={"/noticias"} className="font-bold text-xl">Noticias</Link>
+                </div>
                 {login && 
                 <div  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
                   <Link to={"/registro"} className="font-bold text-xl">Registro</Link>
@@ -86,6 +89,9 @@ export default function Header() {
             </div>
             <div  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl font-medium">
                 <Link to={"/partidos"}>Partidos</Link>
+            </div>
+            <div  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl font-medium">
+                <Link to={"/noticias"}>Noticias</Link>
             </div>
             {login && 
             <div  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl font-medium">
