@@ -13,8 +13,8 @@ export default function Home() {
             />
 
       </div>
-        <h1 className='sm:text-6xl text-4xl text-white font-bold relative bottom-44 '>Las Pirañas</h1>
-        <p className='sm:text-6xl text-2xl text-white font-bold relative  bottom-44 '>Ciudad Deportiva</p>
+        {/* <h1 className='sm:text-6xl text-4xl text-white font-bold relative bottom-44 '>Las Pirañas</h1> */}
+        {/* <p className='sm:text-6xl text-2xl text-white font-bold relative  bottom-44 '>Ciudad Deportiva</p> */}
 
       <div className='flex justify-center flex-wrap'>
           <img 
