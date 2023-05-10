@@ -170,6 +170,7 @@ export default function NewPlayer() {
         <select className='block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm p-2' onChange={(e)=> setPosition(e.target.value)}>
             <option defaultValue='Arquero'  >Arquero</option>
             <option defaultValue='Defensor'  >Defensor</option>
+            <option defaultValue='Medio Campista' >Medio Campista</option>
             <option defaultValue='Delantero' >Delantero</option>
         </select>
       </div>
