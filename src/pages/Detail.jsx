@@ -69,7 +69,7 @@ export default function Detail() {
                     <p><span className='font-bold text-gray-300'>Fecha de nacimiento:</span> {player.date}</p>
                     <p><span className='font-bold text-gray-300'>Edad:</span> {getYearsOld(player.date)}</p>
                     <p><span className='font-bold text-gray-300'>Nacionalidad:</span> {player.country}</p>
-                    <p><span className='font-bold text-gray-300'>Ciudad:</span> {player.city}</p>
+                    <p><span className='font-bold text-gray-300'>Localidad:</span> {player.city}</p>
                     <p><span className='font-bold text-gray-300'>Capitan:</span> {player.captain ? "Si" : "No"}</p>
                     <p><span className='font-bold text-gray-300'>Altura:</span> {player.height}m</p>
                     <p><span className='font-bold text-gray-300'>Posicion:</span> {player.position}</p>

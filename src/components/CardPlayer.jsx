@@ -1,10 +1,9 @@
 import { Link } from "react-router-dom"
 
 export default function CardPlayer({player}) {
-    console.log(player)
     const printCards = (item,i)=>{
         return (
-            <div data-aos="fade-right" key={i} className={`rounded-xl flex justify-center flex-col max-w-sm my-3 mx-3 shadow-xl hover:shadow-white duration-500 ${item.sex === "Mujer" ? "hover:shadow-pink-400" : "hover:shadow-blue-500"}`}>
+            <div data-aos="fade-right" key={i} className={`rounded-xl flex justify-center flex-col max-w-sm my-3 mx-3 shadow-xl  duration-500 ${item.sex === "Mujer" ? "hover:shadow-pink-400" : "hover:shadow-blue-500"}`}>
                 <Link className="flex flex-col" to={`/detail?id=${item._id}`}>
                     <img src={item.photo} 
                     className="h-80 w-80 object-cover rounded-t-xl" 

@@ -121,7 +121,7 @@ export default function NewPlayer() {
 
 
       <div className="mb-4">
-        <label htmlFor="city" className="block text-gray-100 text-xl font-medium mb-2">Ciudad</label>
+        <label htmlFor="city" className="block text-gray-100 text-xl font-medium mb-2">Localidad</label>
         <input
           type="text"
           id="city"
