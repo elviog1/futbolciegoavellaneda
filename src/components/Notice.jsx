@@ -2,11 +2,16 @@ import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { AiFillDelete } from "react-icons/ai";
 
-export default function Notice({notice}) {
+export default function Notice({notice, noticiasPorSeccion, seccionActual}) {
   const [notices,setNotices] = useState([...notice].reverse())
   const api = "https://futbolciegoavellaneda.onrender.com/notices"
   const user = JSON.parse(localStorage.getItem("user"))
+  const startIndex = (seccionActual - 1) * noticiasPorSeccion;
+  const endIndex = startIndex + noticiasPorSeccion;
 
+  // Filtra las noticias según el índice de inicio y fin
+  const noticiasSeccion = notices.slice(startIndex, endIndex);
+  
   const handleDelete = (id)=>{
     axios.delete(api+`/${id}`)
       .then(()=>{
@@ -40,7 +45,7 @@ export default function Notice({notice}) {
 
   return (
     <div className='flex flex-col gap-5'>
-      {notices.map(printNotice)}
+      {noticiasSeccion.map(printNotice)}
     </div>
   )
 }
