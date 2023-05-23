@@ -25,9 +25,9 @@ const api = "https://futbolciegoavellaneda.onrender.com/games"
           <img className='w-full h-100 object-cover ' src='https://i.imgur.com/wTjlbjX.jpg' />
           <h1 className='sm:text-4xl text-4xl text-center text-gray-300 font-bold relative bottom-44  tracking-widest  uppercase backdrop-blur-lg'>Copa Claudio Monzón</h1>
           {loading ?
-          <div>
+          <div className='flex flex-col gap-5'>
             <RankingTeam games={games} />
-            <div className='h-96 overflow-y-auto mt-4'>
+            <div className='h-96 overflow-y-auto mt-5'>
               <TableGames games={games} />
             </div>
           </div>

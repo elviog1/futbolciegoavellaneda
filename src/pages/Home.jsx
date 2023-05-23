@@ -11,17 +11,14 @@ export default function Home() {
             src={FutbolCiegoPhoto}
             className="bg-white h-96 object-cover rounded-3xl w-100 brightness-75"
             />
-
       </div>
-        {/* <h1 className='sm:text-6xl text-4xl text-white font-bold relative bottom-44 '>Las Pirañas</h1> */}
-        {/* <p className='sm:text-6xl text-2xl text-white font-bold relative  bottom-44 '>Ciudad Deportiva</p> */}
 
-      <div className='flex justify-center flex-wrap'>
+      <div className='flex justify-center flex-wrap mt-5'>
           <img 
             src={logo} 
             className='w-96'
           />
-          <div className='flex flex-col justify-center gap-4 sm:text-2xl text-xl sm:max-w-4xl '>{ /*w-8/12*/}
+          <div className='flex flex-col justify-center lg:items-start gap-4 sm:text-2xl text-xl sm:max-w-xl '>
             <span className='font-bold text-gray-300 '> Alguien dijo ... <span className='text-5xl'>¿PIRAÑAS?</span></span>
             <p className='text-gray-300'>- Si si, Pirañas. ¿ Te gustaria formar parte del equipo, entrenar, conocer gente nueva y mas ? No lo dudes, se una PIRAÑA como nosotros  !</p>
             <Link to="/nosotros" className='text-green-800 hover:text-green-600 font-bold text-center text-3xl sm:flex justify-center'>
