@@ -52,7 +52,7 @@ export default function Notice({ notice, noticiasPorSeccion, seccionActual }) {
               <div className="flex justify-between">
                 <div className="flex">
                   <TwitterShareButton
-                    url={"https://futbolciegoavellaneda.vercel.app/"}
+                    url={"https://futbolciegoavellaneda.vercel.app/noticias"}
                     title={`¡Nueva Noticia ! \n${notice.title}\nClick aqui: 👉 `}
                   >
                     <AiOutlineTwitter className="text-5xl text-sky-400 hover:text-sky-600 duration-300" />
