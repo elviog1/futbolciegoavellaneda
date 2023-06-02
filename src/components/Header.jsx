@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { HiMenu, HiX } from 'react-icons/hi';
-import logo from '../images/Photo/logo-laspirañas2.png'
+import logo from '../images/Photo/logo-laspirañas2.webp'
 
 export default function Header() {
     const [isOpen, setIsOpen] = useState(false);
@@ -14,13 +14,13 @@ export default function Header() {
       }
     },[setLogin])
   return (
-    <nav className="bg-gray-800">
+    <header className="bg-gray-800">
       <div className=" mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center flex-wrap">
             <div className="flex-shrink-0">
               <Link to="/signin">
-                <img src={logo} className="h-14" />
+                <img alt='Logo LAS PIRAÑAS' src={logo} className="h-14" />
               </Link>
             </div>
             <div className="hidden lg:block">
@@ -101,6 +101,6 @@ export default function Header() {
           </div>
         </div>
       </div>
-    </nav>
+    </header>
   );
 }

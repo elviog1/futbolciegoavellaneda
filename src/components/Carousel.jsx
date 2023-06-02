@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react"
-import team from '../images/Photo/EquipoHombres.jpeg'
-import team1 from '../images/Photo/EquipoMujeres.jpeg'
-import team2 from '../images/Photo/PartidoMasc.jpeg'
-import team3 from '../images/Photo/PartidoFem.jpeg'
-import team4 from '../images/Photo/Grupal.jpeg'
-import team5 from '../images/Photo/Grupal2.jpg'
+import team from '../images/Photo/EquipoHombres.webp'
+import team1 from '../images/Photo/EquipoMujeres.webp'
+import team2 from '../images/Photo/PartidoMasc.webp'
+import team3 from '../images/Photo/PartidoFem.webp'
+import team4 from '../images/Photo/Grupal.webp'
+import team5 from '../images/Photo/Grupal2.webp'
 import { BsFillCaretLeftFill,BsFillCaretRightFill } from "react-icons/bs";
 
 
@@ -28,7 +28,7 @@ export default function Carousel() {
   
       const itemCarousel = (item) =>( 
                   <div className='h-96 ' key={item}>
-                      <img  src={item} className='rounded-2xl h-full object-cover'/>
+                      <img alt="Foto Jugador de las Pirañas" src={item} className='rounded-2xl h-full object-cover'/>
                   </div>
       )
   

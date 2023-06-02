@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
-import logo from '../images/Photo/logo-pirañas.png'
-import yesi from '../images/Photo/yesi.jpg'
-import delfo from '../images/Photo/delfo-cabrera.jpeg'
+import logo from '../images/Photo/logo-pirañas.webp'
+import yesi from '../images/Photo/yesi.webp'
+import delfo from '../images/Photo/delfo-cabrera.webp'
 
 import Carousel from '../components/Carousel'
 import 'animate.css';
@@ -18,7 +18,7 @@ export default function About() {
         <div  className=' flex items-center mt-10 ' data-aos="fade-right">
             <div className=''>
                 <div className='flex flex-wrap justify-center items-center'>
-                    <img src={logo} 
+                    <img alt='Dibujo de Las Pirañas' src={logo} 
                         className="sm:w-96 max-h-96"
                     />
                     <div className='self-center max-w-xl'>
@@ -40,7 +40,7 @@ export default function About() {
                         </div>
                     </div>
                     <div data-aos="flip-left">
-                        <img src={yesi} 
+                        <img alt='Foto de Yésica Galeano, DT de Las Pirañas' src={yesi} 
                             className="sm:w-72 shadow-lg duration-300 hover:shadow-white rounded-full mt-14"
                         />
                         </div>
@@ -61,7 +61,7 @@ export default function About() {
                     </div>
                     <div data-aos="fade-up"
                          data-aos-anchor-placement="top-bottom">
-                        <img src={delfo} 
+                        <img alt='Delfo Cabrera' src={delfo} 
                             className="h-82  object-cover rounded-3xl my-4 opacity-50 hover:opacity-100 duration-300 "
                             />
                     </div>

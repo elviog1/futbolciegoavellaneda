@@ -37,12 +37,12 @@ export default function Notice({ notice, noticiasPorSeccion, seccionActual }) {
       <img
         className="sm:w-72 rounded mb-4 sm:mb-0 sm:mr-4"
         src={notice.images}
-        alt="imagen"
+        alt="Las piraña - noticia"
       />
 
       <div className="flex justify-between w-full">
         <div className="flex flex-col justify-between">
-          <h2 className="text-4xl mb-2 font-bold">{notice.title}</h2>
+          <h1 className="text-4xl mb-2 font-bold">{notice.title}</h1>
           <p className="mb-4">{notice.notice}</p>
           <div className="flex justify-between">
             <span>{notice.date}</span>
