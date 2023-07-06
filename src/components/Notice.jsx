@@ -35,7 +35,7 @@ export default function Notice({ notice, noticiasPorSeccion, seccionActual }) {
       key={notice.title}
     >
       <img
-        className="sm:w-72 rounded mb-4 sm:mb-0 sm:mr-4"
+        className="sm:w-72 max-h-60 object-cover rounded mb-4 sm:mb-0 sm:mr-4"
         src={notice.images}
         alt="Las piraña - noticia"
       />
